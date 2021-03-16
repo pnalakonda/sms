@@ -34,7 +34,7 @@ body {
 .wrapper {
   width: 100%;
   max-width: 400px;
-  background: #262626;
+  background: #3c3b3b;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -48,6 +48,11 @@ h3 {
   margin-top: 0;
   font-weight: 400;
   padding-bottom: 10px;
+}
+select > option {
+  width: 100%;
+  border: none;
+  background-color: #8e3636;
 }
 .form-row {
   border: 1px solid rgb(91, 90, 90);
@@ -71,6 +76,7 @@ h3 {
   font-size: 16px;
   margin-top: 6px;
 }
+
 .submit-btn {
   display: inline-block;
   background: #eb551f;

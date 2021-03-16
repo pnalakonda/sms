@@ -19,6 +19,7 @@ let enquiry = {};
 let allEnquiries = [];
 enquiryForm.addEventListener("submit", function (e) {
   e.preventDefault();
+  // Read all the values
   enquiry.parentFamilyName = parentFamilyName.value;
   enquiry.parentGivenName = parentGivenName.value;
   enquiry.kidsFullName = kidsFullName.value;
@@ -27,6 +28,14 @@ enquiryForm.addEventListener("submit", function (e) {
   enquiry.childDOB = childDOB.value;
   enquiry.service = service.value;
   allEnquiries.push(enquiry);
+  //empty the form
+  parentFamilyName.value = "";
+  parentGivenName.value = "";
+  kidsFullName.value = " ";
+  mobileNumber.value = "";
+  emailID.value = "";
+  childDOB.value = "";
+  service.value = "";
   alert("Form Submitted ");
   console.log(enquiry);
   console.log(allEnquiries);
