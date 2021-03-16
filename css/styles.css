@@ -79,6 +79,15 @@ h3 {
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 8px;
-  width: 100%;
+  width: 95%;
   border-radius: 5px;
+}
+
+.submit-btn:active,
+.submit-btn:hover {
+  width: 100%;
+  font-weight: 400;
+  background: #f24c10;
+  color: #ffffff;
+  transition: ease-in 0.2s;
 }

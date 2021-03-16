@@ -12,17 +12,19 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@100;200;300&display=swap"
       rel="stylesheet"
     />
+    <script defer src="scripts/scripts.js"></script>
   </head>
   <body>
     <div class="wrapper">
-      <form name="Enquiry_Form">
+      <form name="Enquiry_Form" id="enquiryForm">
         <h3>Enquiry Form</h3>
         <div class="form-row">
-          <label class="form-label">Parent Full Name:</label>
+          <label class="form-label">Parent Family Name:</label>
           <input
             class="input-text"
             type="text"
-            placeholder="Parent Given Name"
+            placeholder="Parent Family Name"
+            id="parentFamilyName"
           />
         </div>
         <div class="form-row">
@@ -31,36 +33,58 @@
             class="input-text"
             type="text"
             placeholder="Parent Given Name"
+            id="parentGivenName"
           />
         </div>
         <div class="form-row">
           <label class="form-label">Kid`s Full Name:</label>
-          <input class="input-text" type="text" placeholder="Kids Full Name" />
+          <input
+            class="input-text"
+            type="text"
+            id="kidsFullName"
+            placeholder="Kids Full Name"
+          />
         </div>
         <div class="form-row">
           <label class="form-label">Mobile Number: </label>
-          <input class="input-text" type="text" placeholder="Mobile Number" />
+          <input
+            class="input-text"
+            type="text"
+            id="mobileNumber"
+            placeholder="Mobile Number"
+          />
         </div>
         <div class="form-row">
           <label class="form-label">Email: </label>
-          <input class="input-text" type="email" placeholder="Email" />
+          <input
+            class="input-text"
+            type="email"
+            placeholder="Email"
+            id="emailID"
+          />
         </div>
         <div class="form-row">
           <label class="form-label">Child DOB: </label>
-          <input class="input-text" type="date" placeholder="mm/dd/yyyy" />
+          <input
+            class="input-text"
+            type="date"
+            placeholder="mm/dd/yyyy"
+            id="childDOB"
+          />
         </div>
         <div class="form-row">
           <label class="form-label">We need:</label>
-          <select class="input-text">
+          <select class="input-text" id="service">
             <option value="UKG">Infant Care</option>
             <option value="Nursery">Nursery</option>
             <option value="LKG">LKG</option>
             <option value="UKG">UKG</option>
-            <option value="UKG">Day Care</option>
+            <option value="daycare">Day Care</option>
           </select>
         </div>
         <div>
-          <a class="submit-btn">Send</a>
+          <!-- <a class="submit-btn" id="submitBtn">Send</a> -->
+          <button class="submit-btn" id="submitBtn">Send</button>
         </div>
       </form>
     </div>
